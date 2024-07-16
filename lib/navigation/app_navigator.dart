@@ -103,7 +103,7 @@ Route<T> fadeInRoute<T>(
     PageRouteBuilder<T>(
       opaque: opaque,
       transitionDuration: Duration(
-        milliseconds: durationMillis ?? Durations.medium,
+        milliseconds: durationMillis ?? 200,
       ),
       settings: RouteSettings(name: pageName ?? page.runtimeType.toString()),
       pageBuilder: _pageBuilder(page),
@@ -125,7 +125,7 @@ Route<T> fadeInWithDelayRoute<T>(
     PageRouteBuilder<T>(
       opaque: opaque,
       transitionDuration: Duration(
-        milliseconds: durationMillis ?? Durations.long,
+        milliseconds: durationMillis ?? 200,
       ),
       settings: RouteSettings(name: pageName ?? page.runtimeType.toString()),
       pageBuilder: _pageBuilder(page),
@@ -194,7 +194,7 @@ Route<T> _transitionRoute<T>(
     PageRouteBuilder<T>(
       opaque: opaque,
       transitionDuration: Duration(
-        milliseconds: durationMillis ?? Durations.medium,
+        milliseconds: durationMillis ?? 200,
       ),
       fullscreenDialog: fullScreenDialog,
       settings: RouteSettings(name: pageName ?? page.runtimeType.toString()),

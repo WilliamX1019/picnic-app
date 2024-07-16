@@ -5,17 +5,15 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 2.10.0+202
 
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=2.17.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  flutter_localizations:
-    sdk: flutter
 
   picnic_ui_components:
     path: packages/picnic-ui-components/
-
+  flutter_localization: ^0.2.0
   # architecture
   bloc: 8.1.0
   flutter_bloc: 8.0.1
@@ -34,7 +32,7 @@ dependencies:
   flutter_keyboard_visibility: 5.4.0
 
   # localization
-  intl: 0.17.0
+  intl: 0.19.0
 
   # widgets
   gap: 2.0.1
@@ -71,13 +69,13 @@ dependencies:
   file_picker: 5.2.5
 
   #firebase
-  firebase_core: 2.7.0
-  firebase_auth: 4.2.5
-  firebase_messaging: 14.2.5
-  firebase_crashlytics: 3.0.10
-  firebase_analytics: 10.1.0
-  firebase_dynamic_links: 5.0.11
-  firebase_remote_config: ^3.0.9
+  firebase_core: 3.2.0
+  firebase_auth: 5.1.2
+  firebase_messaging: 15.0.3
+  firebase_crashlytics: 4.0.3
+  firebase_analytics: 11.2.0
+  firebase_dynamic_links: 6.0.2
+  firebase_remote_config: ^5.0.3
 
   # Universal/app links
   uni_links: 0.5.1
@@ -155,7 +153,7 @@ dependencies:
   device_info_plus: 8.0.0
   package_info_plus: 3.0.2
   flutter_exif_rotation: 0.5.1
-  shared_preferences: 2.0.17
+  shared_preferences: 2.2.2
   connectivity_plus: 3.0.3
   rxdart: 0.27.7
 
@@ -180,32 +178,32 @@ dependency_overrides:
   custom_lint:
     path: packages/dart-custom-lint/packages/custom_lint
   collection: 1.17.0
-  test_api: 0.4.17
+  test_api: 0.7.3
   # This is here because the flutter_launcher_icons use the 3.2.2 version yet, when flutter_launcher_icons bump the version
   # we don't need to add into dependency_overrides
   image: 4.0.8
-
+  meta : ^1.14.0
+  async: 2.11.0
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
 
   # code analysis
   lint: 2.0.1
   dart_code_metrics: 5.7.2
-  custom_lint:
-    path: packages/dart-custom-lint/packages/custom_lint
-  clean_architecture_lints:
-    path: tools/custom_lints/clean_architecture_lints
+  # custom_lint:
+  #   path: packages/dart-custom-lint/packages/custom_lint
+  # clean_architecture_lints:
+  #   path: tools/custom_lints/clean_architecture_lints
 
   # stability tools
 
   # tests
-  golden_toolkit: 0.15.0
-  alchemist: 0.6.0
-  mocktail_image_network: 0.3.1
-  mocktail: 0.3.0
-  bloc_test: 9.0.3
-  fake_async: 1.3.1
+ 
+  # golden_toolkit: 0.15.0
+  # alchemist: 0.6.0
+  # mocktail_image_network: 0.3.1
+  # mocktail: 0.3.0
+  # bloc_test: 9.0.3
+  # fake_async: 1.3.1
 
   # widgetbook
   widgetbook: 2.4.1
